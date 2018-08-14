@@ -1,0 +1,15 @@
+def main():
+    score = float(input("Enter score: "))
+    print(check_score(score))
+
+def check_score(score):
+    if score < 0 or score > 100:
+        return("Invalid score")
+    elif score >= 90 <= 100:
+        return("Excellent")
+    elif score >= 50:
+        return("Passable")
+    else:
+        return("bad")
+
+main()
