@@ -1,8 +1,17 @@
 def main():
     MIN_LENGTH = 6
-password = str(input("enter password, it must be {} character long".format(MIN_LENGTH)))
-while len(password) < MIN_LENGTH:
-    password = str(input("enter password, it must be {} character long".format(MIN_LENGTH)))
+    password = get_password(MIN_LENGTH)
+    print('*' * len(password))
 
-print('*' * len(password))
-main()
+def get_password(MIN_LENGTH):
+    password = input("enter password, it must be {} character long".format(MIN_LENGTH))
+    while len(password) < MIN_LENGTH:
+        password = input("enter password, it must be {} character long".format(MIN_LENGTH))
+    return(password)
+
+
+def get_password():
+    main()
+
+
+get_password()
