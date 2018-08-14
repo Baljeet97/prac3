@@ -10,8 +10,6 @@ def get_password(MIN_LENGTH):
     return(password)
 
 
-def get_password():
-    main()
+main()
 
 
-get_password()
